@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 5 - Fall Word Scramble</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍂 Fall Word Scramble 🍁</h1>
+  <div id="timer">
+  Page Time: <span id="pageTimer">0:00</span> | Total Time: <span id="totalTimer">0:00</span>
+</div>
+
+  <p>Unscramble the words related to fall!</p>
+
+  <div id="scrambledWord"></div>
+  <input type="text" id="wordInput" placeholder="Type the word">
+  <button id="submitBtn">Submit</button>
+
+  <div id="foundWords">
+    <h3>Words Found:</h3>
+    <ul id="foundList"></ul>
+  </div>
+
+  <button id="nextBtn" onclick="finishPage()">Next Page</button>
+
+  <script src="script5.js"></script>
+</body>
+<script src="timer.js"></script>
+
+</html>

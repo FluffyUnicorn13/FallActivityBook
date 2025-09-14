@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 6 - Fall Story</title>
+  <div id="timer">
+  Page Time: <span id="pageTimer">0:00</span> | Total Time: <span id="totalTimer">0:00</span>
+</div>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍁 Fall Story Comprehension 🍂</h1>
+
+  <div id="storyBox">
+    <p>The air was crisp and filled with the scent of fallen leaves. Emily pulled her cozy sweater tighter around her as she walked through the park, watching the golden and red leaves swirl around her feet. Squirrels scurried about, gathering acorns for the coming winter. The sun peeked through the trees, casting long, warm shadows on the path.</p>
+    <p>Emily stopped by the small pond and noticed a family of ducks swimming peacefully. She smiled, enjoying the calm sounds of nature. In the distance, children laughed as they jumped into piles of leaves, and the distant smell of cider from a nearby café made her stomach rumble. Autumn had truly arrived, and she felt grateful for the beauty of the season.</p>
+  </div>
+
+  <form id="quizForm">
+    <!-- Question 1 -->
+    <div class="question">
+      <p><strong>1. What did Emily pull around herself as she walked through the park?</strong></p>
+      <label><input type="radio" name="q1" value="scarf"> Scarf</label><br>
+      <label><input type="radio" name="q1" value="coat"> Coat</label><br>
+      <label><input type="radio" name="q1" value="sweater"> Sweater</label><br>
+      <label><input type="radio" name="q1" value="gloves"> Gloves</label>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <p><strong>2. Which animal was gathering acorns?</strong></p>
+      <label><input type="radio" name="q2" value="birds"> Birds</label><br>
+      <label><input type="radio" name="q2" value="squirrels"> Squirrels</label><br>
+      <label><input type="radio" name="q2" value="rabbits"> Rabbits</label><br>
+      <label><input type="radio" name="q2" value="deer"> Deer</label>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+      <p><strong>3. What was floating in the small pond?</strong></p>
+      <label><input type="radio" name="q3" value="leaves"> Leaves</label><br>
+      <label><input type="radio" name="q3" value="fish"> Fish</label><br>
+      <label><input type="radio" name="q3" value="ducks"> Ducks</label><br>
+      <label><input type="radio" name="q3" value="frogs"> Frogs</label>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question">
+      <p><strong>4. What made Emily’s stomach rumble?</strong></p>
+      <label><input type="radio" name="q4" value="cider"> Smell of cider</label><br>
+      <label><input type="radio" name="q4" value="cold"> Cold air</label><br>
+      <label><input type="radio" name="q4" value="children"> Jumping children</label><br>
+      <label><input type="radio" name="q4" value="leaves"> Crunching leaves</label>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question">
+      <p><strong>5. The children were jumping into piles of ________.</strong></p>
+      <input type="text" name="q5" id="q5Input" placeholder="Type your answer">
+    </div>
+
+    <button type="button" id="submitBtn">Submit Answers</button>
+  </form>
+
+  <div id="status"></div>
+  <button id="nextBtn" onclick="finishPage()">Next Page</button>
+
+  <script src="script6.js"></script>
+</body>
+<script src="timer.js"></script>
+
+</html>
