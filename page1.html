@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fall Activity Book - Page 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<h1 class="title">
+    <span class="leaf" style="color: #FF8C00;">🍁</span>
+    Fall Word Search
+    <span class="leaf" style="color: #FFD700;">🍁</span>
+</h1>
+
+<body>
+  <!-- Timer -->
+  <div id="timer">
+      Page Time: <span id="pageTimer">0:00</span> | Total Time: <span id="totalTimer">0:00</span>
+  </div>
+
+  <div class="container">
+    <p>Find all the words in the grid!</p>
+
+    <!-- Word search grid and word list side by side -->
+    <div class="word-search-wrapper">
+      <div id="word-search"></div>
+
+      <div id="word-list">
+        <h3>Words to find:</h3>
+        <ul>
+          <li>autumn</li>
+          <li>leaves</li>
+          <li>pumpkin</li>
+          <li>harvest</li>
+          <li>acorn</li>
+          <li>cool</li>
+          <li>orange</li>
+          <li>vibes</li>
+          <li>fall</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Next Page button -->
+    <button id="nextBtn" onclick="finishPage()">Next Page</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="timer.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>

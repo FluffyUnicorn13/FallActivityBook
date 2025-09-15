@@ -1,0 +1,184 @@
+/* === General page styling === */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #FFE5B4; /* light fall orange */
+    margin: 20px;
+    color: #800000; /* dark maroon */
+}
+
+h1 {
+    color: #800000;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+/* === Timer === */
+#timer {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* === Word search page === */
+.word-search-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#word-search {
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 1.5;
+    user-select: none;
+}
+
+#word-search .row span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #800000;
+    background-color: #FFF9C4; /* very light soft yellow */
+}
+
+#word-search .row span.selected {
+    background-color: #FFF59D; /* slightly darker yellow for selection */
+}
+
+#word-search .row span.found {
+    background-color: #FFE082; /* darker yellow for found letters */
+}
+
+#word-list {
+    text-align: left;
+}
+
+#word-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#word-list li.found {
+    text-decoration: line-through;
+    color: #A52A2A; /* brownish crossed-out word */
+}
+
+/* === Input boxes === */
+input[type="text"], #wordInput {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+    background-color: #FFF9C4;
+    color: #800000;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* === Buttons === */
+button, #submitBtn, #nextBtn, #restartBtn {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #F5DEB3; /* very light brown */
+    color: #800000;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#nextBtn {
+    display: none;
+}
+
+/* === Status messages === */
+#status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #800000;
+}
+
+/* === Page 2: Find the Objects === */
+.game-container {
+    position: relative;
+    display: inline-block;
+}
+
+.game-container img.background {
+    width: 600px;
+    border: 3px solid #800000;
+    border-radius: 8px;
+}
+
+.object {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.object.found {
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* === Story / Quiz / Results Pages === */
+#storyBox, #results, .riddle, #foundWords {
+    background-color: #FFF9C4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #800000;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+/* === Word Scramble (page 5) === */
+#scrambledWord {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #800000;
+}
+
+/* === Page 6 / Summary === */
+#greeting {
+    font-size: 28px;
+    color: #800000;
+    margin-bottom: 5px;
+}
+
+#completionTime {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#results ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#results li {
+    margin-bottom: 5px;
+}
+
+/* === Fall leaves title decoration === */
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.title .leaf {
+    font-size: 36px;
+    vertical-align: middle;
+    margin: 0 10px;
+}

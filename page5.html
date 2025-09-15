@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fall Activity Book - Page 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Timer -->
+  <div id="timer">
+    Page Time: <span id="pageTimer">0:00</span> | Total Time: <span id="totalTimer">0:00</span>
+  </div>
+
+  <div class="container">
+    <h1>🍁 Unscramble the Word 🍂</h1>
+    <p>Unscramble the letters to make a Fall-themed word. You need at least 10 correct out of 20. You may also skip words.</p>
+
+    <!-- Scrambled word display -->
+    <div id="scrambledWord" class="scrambled"></div>
+
+    <!-- Input and buttons -->
+    <input type="text" id="wordInput" placeholder="Type your answer" />
+    <br />
+    <button id="submitBtn">Submit</button>
+    <button id="skipBtn">Skip</button>
+    <button id="nextBtn" onclick="finishPage()" style="display:none;">Next Page</button>
+
+    <!-- Status -->
+    <div id="status"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="timer.js"></script>
+  <script src="script5.js"></script>
+</body>
+</html>

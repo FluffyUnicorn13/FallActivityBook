@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 4 - Fall Riddles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍁 Fall Riddles 🍂</h1>
+  <div id="timer">
+  Page Time: <span id="pageTimer">0:00</span> | Total Time: <span id="totalTimer">0:00</span>
+</div>
+
+  <p>Choose the correct answer for each riddle.</p>
+
+  <form id="riddleForm">
+    <!-- Riddle 1 -->
+    <div class="riddle">
+      <p><strong>1. I drift down slowly, red, orange, or gold, I cover the ground when the air turns cold. What am I?</strong></p>
+      <label><input type="radio" name="riddle1" value="snow"> Snow</label><br>
+      <label><input type="radio" name="riddle1" value="leaves"> Leaves</label><br>
+      <label><input type="radio" name="riddle1" value="acorns"> Acorns</label><br>
+      <label><input type="radio" name="riddle1" value="apples"> Apples</label>
+    </div>
+
+    <!-- Riddle 2 -->
+    <div class="riddle">
+      <p><strong>2. I whisper and howl through the trees, I carry seeds and dance with the leaves. What am I?</strong></p>
+      <label><input type="radio" name="riddle2" value="rain"> Rain</label><br>
+      <label><input type="radio" name="riddle2" value="sun"> Sun</label><br>
+      <label><input type="radio" name="riddle2" value="wind"> Wind</label><br>
+      <label><input type="radio" name="riddle2" value="fog"> Fog</label>
+    </div>
+
+    <!-- Riddle 3 -->
+    <div class="riddle">
+      <p><strong>3. I rise big and bright in the crisp night sky, guiding the farmer as the days go by. What am I?</strong></p>
+      <label><input type="radio" name="riddle3" value="harvestmoon"> Harvest Moon</label><br>
+      <label><input type="radio" name="riddle3" value="lantern"> Lantern</label><br>
+      <label><input type="radio" name="riddle3" value="cloud"> Cloud</label><br>
+      <label><input type="radio" name="riddle3" value="owl"> Owl</label>
+    </div>
+
+    <button type="button" id="submitBtn">Submit Answers</button>
+  </form>
+
+  <div id="status"></div>
+  <button id="nextBtn" onclick="finishPage()">Next Page</button>
+
+  <script src="script4.js"></script>
+</body>
+<script src="timer.js"></script>
+
+</html>

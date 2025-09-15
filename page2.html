@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fall Activity Book - Page 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Timer -->
+    <div id="timer">
+        Page Time: <span id="pageTimer">0:00</span> | Total Time: <span id="totalTimer">0:00</span>
+    </div>
+
+    <div class="container">
+        <h1>🍁 Find the Objects 🍂</h1>
+        <p>Click on all the hidden objects in the scene!</p>
+
+        <!-- Game container -->
+        <div class="game-container" id="gameContainer">
+            <img src="images/fall_scene.jpg" class="background" alt="Fall Scene">
+
+            <!-- Hidden objects -->
+            <img src="images/pumpkin1.png" class="object" id="obj1">
+            <img src="images/pumpkin2.png" class="object" id="obj2">
+            <img src="images/pumpkin3.png" class="object" id="obj3">
+            <img src="images/acorn.png" class="object" id="obj4">
+            <img src="images/apple.png" class="object" id="obj5">
+        </div>
+
+        <!-- Status and next page -->
+        <div id="status">Found 0 of 5 objects!</div>
+        <button id="nextBtn" onclick="finishPage()">Next Page</button>
+    </div>
+
+    <script src="timer.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
